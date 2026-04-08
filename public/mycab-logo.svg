@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="26" fill="url(#bg)"/>
+  <path d="M28 42C28 33.2 35.2 26 44 26H84C92.8 26 100 33.2 100 42V86C100 94.8 92.8 102 84 102H44C35.2 102 28 94.8 28 86V42Z" fill="white" fill-opacity="0.12"/>
+  <path d="M44 40C39.6 40 36 43.6 36 48C36 55 44 64 44 64C44 64 52 55 52 48C52 43.6 48.4 40 44 40Z" fill="#22C55E"/>
+  <circle cx="44" cy="48" r="3" fill="white"/>
+  <path d="M84 64C79.6 64 76 67.6 76 72C76 79 84 88 84 88C84 88 92 79 92 72C92 67.6 88.4 64 84 64Z" fill="#22C55E"/>
+  <circle cx="84" cy="72" r="3" fill="white"/>
+  <path d="M50 52C61 52 67 56 76 66" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M72 58L79 66L70 68" fill="white"/>
+  <path d="M78 68C68 68 61 66 52 56" stroke="#C7D2FE" stroke-width="3" stroke-linecap="round"/>
+  <text x="64" y="116" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white">MyCab</text>
+  <defs>
+    <linearGradient id="bg" x1="12" y1="6" x2="116" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+</svg>
