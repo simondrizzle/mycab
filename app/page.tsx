@@ -525,14 +525,27 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-100 px-4 py-12">
-      <section className="mx-auto w-full max-w-xl rounded-2xl bg-white p-6 shadow-lg">
+    <main className="relative min-h-screen overflow-hidden bg-slate-100 px-4 py-12">
+      <div
+        className="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat opacity-55"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=1800&q=80')"
+        }}
+      />
+      <div className="pointer-events-none absolute inset-0 bg-slate-900/45" />
+
+      <section className="relative mx-auto w-full max-w-xl rounded-2xl bg-white/94 p-6 shadow-xl ring-1 ring-slate-200/70">
         <div className="mb-5 flex items-center justify-between gap-2">
-          <div className="flex items-center gap-3">
-            <Image src="/mycab-logo.svg" alt="MyCab logo" width={44} height={44} />
-            <h1 className="text-lg font-bold text-slate-800 sm:text-xl">{t.appTitle}</h1>
+          <div className="flex items-center gap-3 rounded-xl border border-slate-300 bg-white/95 px-3 py-2 shadow-sm">
+            <div className="rounded-lg bg-white p-1 shadow-sm">
+              <Image src="/mycab-logo.svg" alt="MyCab logo" width={40} height={40} />
+            </div>
+            <h1 className="text-lg font-extrabold tracking-tight text-slate-900 drop-shadow-[0_1px_0_rgba(255,255,255,0.6)] sm:text-xl">
+              {t.appTitle}
+            </h1>
           </div>
-          <div className="flex items-center gap-1 rounded-lg border border-slate-200 p-1">
+          <div className="flex items-center gap-1 rounded-lg border border-slate-300 bg-white/95 p-1 shadow-sm">
             {(["zh", "en", "ms"] as Language[]).map((lang) => (
               <button
                 key={lang}
@@ -540,8 +553,8 @@ export default function Home() {
                 onClick={() => setLanguage(lang)}
                 className={`rounded-md px-2 py-1 text-xs font-semibold transition ${
                   language === lang
-                    ? "bg-slate-900 text-white"
-                    : "text-slate-600 hover:bg-slate-100"
+                    ? "bg-slate-900 text-white shadow-sm"
+                    : "text-slate-800 hover:bg-slate-200"
                 }`}
               >
                 {lang.toUpperCase()}
